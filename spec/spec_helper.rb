@@ -5,6 +5,8 @@ require File.expand_path('../config/environment', __dir__)
 require 'rspec/rails'
 
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |file| require file }
+require 'simplecov'
+SimpleCov.start 'rails'
 
 RSpec.configure do |config|
   config.include RequestHelper, type: :controller

@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 ruby File.read('.ruby-version').strip
 
-gem 'rails', '~> 6.1.3'
+gem 'rails', '~> 6.1'
 
 gem 'acts_as_api'
 gem 'addressable'
@@ -60,4 +60,5 @@ group :development, :test do
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
+  gem 'simplecov', require: false
 end
